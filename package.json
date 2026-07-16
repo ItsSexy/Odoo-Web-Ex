@@ -1,0 +1,16 @@
+{
+  "name": "odoo-web-ex",
+  "version": "1.0.0",
+  "description": "This repository is dedicated to Arno Joachim's Odoo Web Exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "sass": "^1.101.0"
+  }
+}

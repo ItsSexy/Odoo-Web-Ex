@@ -1,0 +1,63 @@
+/* SPACING */
+:root {
+
+    /* SPACING VARIABLES */
+
+    --sp-0: calc(4 / 16 * 1rem);
+    --sp-1: calc(8 / 16 * 1rem);
+    --sp-2: calc(16 / 16 * 1rem);
+    --sp-3: calc(24 / 16 * 1rem);
+    --sp-4: calc(32 / 16 * 1rem);
+    --sp-5: calc(40 / 16 * 1rem);
+    --sp-6: calc(48 / 16 * 1rem);
+    --sp-7: calc(56 / 16 * 1rem);
+    --sp-8: calc(64 / 16 * 1rem);
+    --sp-9: calc(72 / 16 * 1rem);
+    --sp-10: calc(80 / 16 * 1rem); 
+    /* TEXT SIZES VARIABLES */
+
+    --txt-013: calc(13 / 16 * 1rem);
+    --txt-014: calc(14 / 16 * 1rem);
+    --txt-015: calc(15 / 16 * 1rem);
+    --txt-1: calc(16 / 16 * 1rem);
+    --txt-2: calc(21 / 16 * 1rem);
+    --txt-3: calc(24 / 16 * 1rem);
+    --txt-4: calc(28 / 16 * 1rem);
+    --txt-5: calc(33 / 16 * 1rem);
+    --txt-6: calc(50 / 16 * 1rem);
+
+    /* BORDER RADIUS VARIABLES */
+    --br-s: calc(16 / 16 * 1rem);
+    --br-m: calc(32 / 16 * 1rem);
+    --br-l: calc(64 / 16 * 1rem);
+
+}
+
+@-moz-document url-prefix() {
+    :root {
+        --sp-0: 0.25rem;
+        --sp-1: 0.5rem;
+        --sp-2: 1rem;
+        --sp-3: 1.5rem;
+        --sp-4: 2rem;
+        --sp-5: 2.5rem;
+        --sp-6: 3rem;
+        --sp-7: 3.5rem;
+        --sp-8: 4rem;
+        --sp-9: 4.5rem;
+        --sp-10: 5rem;
+
+        --txt-0: 0.75rem;
+        --txt-1: 1rem;
+        --txt-2: 1.3125rem;
+        --txt-3: 1.75rem;
+        --txt-4: 2.375rem;
+        --txt-5: 3.125rem;
+        --txt-6: 4.1875rem;
+        --txt-7: 5.625rem;
+
+        --br-s: 1rem;
+        --br-m: 2rem;
+        --br-l: 4rem;
+    }
+}
