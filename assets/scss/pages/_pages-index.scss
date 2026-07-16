@@ -1,0 +1,316 @@
+/*=====================
+INTRO
+=====================*/
+
+.intro-text{
+    h1{
+        padding-bottom: 25px;
+    }
+    
+    .btn{
+        margin-block: 50px;
+        padding: 15px 30px;
+        background-color: var(--c-w);
+        color: var(--c-bl);
+        &:hover{
+            background-color: var(--c-bl);
+        }
+    }
+
+    li img{
+        width: 90px;
+        height: 30px;
+    }
+}
+
+.intro-card{
+
+    padding: 32px !important;
+
+    background-color: var(--c-w);
+    color: var(--c-bl);
+
+    border-radius: 16px;
+
+    .btn{
+
+        border-color: var(--c-r-10);
+        border : 3px solid var(--c-r-10);
+
+        &:hover{
+            background-color: var(--c-r);
+            color: var(--c-w);
+            filter: brightness(0.9);
+        }
+    }
+    img{
+        margin-bottom: 14px;
+        width: 100%;
+    }
+    .intro-card-element{
+        padding-bottom: 14px;
+        margin-bottom: 14px;
+
+        border-bottom: 1px solid var(--c-r-10);
+
+        .txt-015{
+            color: var(--c-r-50);
+        }
+    }
+
+    .intro-card-more{
+        color: var(--c-b);
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-decoration-thickness: 3px;
+        text-underline-offset: 6px;
+    }
+}
+
+
+/*=====================
+TOOLS
+=====================*/
+
+.tools-example {
+
+    position: relative;
+
+    .tools-example-list{
+        position: relative;
+        z-index: 0;
+        padding: 40px;
+        
+        background-color: var(--c-w);
+        color: var(--c-bl);
+        
+        border-radius: 16px;
+
+        border: 2px solid var(--c-r-10);
+
+        transition: all 0.15s ease-in-out;
+
+        cursor: pointer;
+
+        filter:grayscale(1);
+        
+        h5{
+            padding-bottom: 25px;
+        }
+
+        span{
+            margin-left: 20px;
+            margin-right: 7px;
+        }
+
+        ul{
+            gap: 50px;
+        }
+        &:hover{
+            z-index: 1;
+            transform: scale(1.015);
+            filter:grayscale(0);
+            + .video-wrapper{
+                filter:grayscale(1);
+            }
+        }
+    }
+}
+
+.tools-video{
+    z-index: 0;
+    position: absolute;
+    top: -107px;
+    right: -107px;
+
+    img{
+        width: 390px;
+        height: 310px;
+    }
+
+    a{
+        right: 25px;
+    }
+
+    &:hover{
+        transform: scale(1.05);
+    }
+
+}
+
+
+.tools-example-item-bar{
+    width: 100%;
+    height: 3px;
+
+    margin-top: 12px;
+
+    background-color: var(--c-r-10);
+
+    &::before{
+        content: "";
+        display: block;
+
+        width: 50%;
+        height: 100%;
+
+        background-color: var(--c-y);
+    }
+}
+
+.tools-text{
+    gap: 25px;
+
+    .tag{
+        background-color: var(--c-y);
+    }
+}
+
+/*=====================
+FEATURES
+=====================*/
+
+.features-text{
+    gap: 50px;
+
+
+    div:first-child{
+        gap: 25px;
+    }
+
+    .tag{
+        background-color: var(--c-g);
+    }
+
+    h5{
+        line-height: 175%;
+    }
+}
+
+.features-text-check{
+    p{
+        color: var(--c-g);
+    }
+}
+
+.features-video{
+    a{
+        left: 25px;
+    }
+}
+
+/*=====================
+TECHNOLOGY
+=====================*/
+
+.technology-grid{
+    margin-inline: Opx !important;
+}
+
+.technology-grid-item{
+    border: 1px solid var(--c-r-10);
+    
+    border-radius: 16px;
+    overflow: hidden;
+
+    width: 100%;
+}
+
+.technology-grid > .d-flex:first-child{
+    width: 100%;
+    & > .technology-grid-item:first-child {
+        padding: 0px;
+        border-radius: 16px;
+
+        & > div:first-of-type{
+            padding: 16px;
+        }
+    }    
+    & > .technology-grid-item:last-child {
+        padding: 16px;
+    }    
+
+}
+.technology-grid > .d-flex:last-child{
+    width: 100%;
+    & > .technology-grid-item:first-child {
+        padding: 50px;
+        img{
+            width: 100px;
+            height: 35px;
+        }
+        li img{
+            width: 18px;
+            height: auto;
+        }
+    }    
+    & > .technology-grid-item:last-child {
+        padding: 25px;
+        .technology-grid-item-header{
+            border-radius: 64px;
+            overflow: hidden;
+        }
+        ul:first-of-type{
+            li img{
+                width: 40px;
+                border-radius: 64px;
+                overflow: hidden;
+                border: 3px solid var(--c-w);
+            }
+            li{
+                z-index: 1;
+
+            }
+            li:nth-child(1){
+                transform:translateX(+10px);
+                z-index: 0;
+            }
+            li:nth-child(3){
+                transform:translateX(-10px);
+                z-index: 2;
+            }
+        }
+        div{
+            width: 50%;
+            height: 1px;
+            background-color: var(--c-r-10);
+        }
+    }    
+}
+
+.technology-text{
+    .tag{
+        background-color: var(--c-b);
+    }
+    gap: 25px;
+}
+
+
+/*=====================
+EASY TO INSTALL
+=====================*/
+
+.easy-video{
+    a{
+        left: 25px;
+    }
+}
+
+.easy-text{
+    div:first-of-type{
+        gap: 25px;
+
+    }
+    p{
+        background-color: var(--c-y);
+    }
+}
+
+.easy-dl{
+    margin-top: 60px;
+
+    img{
+        cursor: pointer;
+        filter: grayscale(1);
+    }
+}

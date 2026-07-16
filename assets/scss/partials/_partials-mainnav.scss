@@ -1,0 +1,29 @@
+nav{
+    background-color: var(--c-b);
+}
+
+.navbar-nav .nav-link{
+    color: var(--c-w);
+}
+
+.nav-buttons {
+
+    .btn:first-child{
+        color: var(--c-w);
+        transition: all 0.15s ease-in-out;
+
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+    
+    .btn:last-child{
+        color: var(--c-bl);
+        background-color: var(--c-w);
+        border-color: var(--c-w);
+
+        &:hover{
+        filter: brightness(0.9);
+        }
+    }
+}

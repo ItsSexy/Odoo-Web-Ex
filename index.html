@@ -10,25 +10,24 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-md bg-white py-3">
+    <nav class="navbar navbar-expand-lg py-3">
         <div class="container">
 
             <a class="navbar-brand" href="#">
-                <img src="assets/medias/logo.svg" alt="Logo" height="40">
+                <img src="assets/medias/svg/odoo-white.svg" alt="Logo" height="40">
             </a>
 
             <button
                 class="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#navbar"
-            >
+                data-bs-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbar">
 
-                <ul class="navbar-nav mx-auto">
+                <ul class="navbar-nav mx-auto gap-3">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
                     </li>
@@ -50,9 +49,12 @@
                     </li>
                 </ul>
 
-                <div class="d-flex gap-2">
-                    <a href="#" class="btn btn-outline-primary">Sign in</a>
-                    <a href="#" class="btn btn-primary">Buy now</a>
+                <div class="d-flex gap-2 nav-buttons">
+                    <a href="#" class="btn">Sign in</a>
+                    <a href="#" class="btn btn">
+                        <img src="/assets/medias/svg/basket.svg" alt="basket" class="img-fluid px-2">
+                        Buy now
+                    </a>
                 </div>
 
             </div>
@@ -60,76 +62,91 @@
         </div>
     </nav>
 
-    <div class="section">
+    <div class="section section--bleu">
 
-        <div class="container d-flex flex-row align-items-center justify-content-center gap-3">
-            <div>
+        <div class="container d-flex flex-row align-items-center justify-content-between">
+            <div class="intro-text col-5 noPI">
                 <h1>Development<br>done right</h1>
                 <h5>Build a beautiful, modern website with<br>flexible components built from scratch.</h5>
-                <button class="btn btn-primary">Get Started <span>+</span></button>
-                <div class="d-flex flex-row align-items-center justify-content-start gap-3"> 
+                <a href="" class="btn btn-primary border-0">Get Started <span class="px-2">+</span></a>
+                <div class="d-flex flex-row align-items-center justify-content-start gap-3">
                     <p class="txt-015">Trusted by: </p>
-                    <ul class="d-flex flex-row align-items-center justify-content-start gap-3">
-                        <li><img src="assets/medias/brand-1.png" alt="Brand 1" class="img-fluid"></li>
-                        <li><img src="assets/medias/brand-1.png" alt="Brand 1" class="img-fluid"></li>
-                        <li><img src="assets/medias/brand-1.png" alt="Brand 1" class="img-fluid"></li>
+                    <ul class="d-flex flex-row align-items-center justify-content-start gap-4">
+                        <li><img src="assets/medias/svg/google-white.svg" alt="Brand 1" class="img-fluid"></li>
+                        <li><img src="assets/medias/svg/spotify-white.svg" alt="Brand 1" class="img-fluid"></li>
+                        <li><img src="assets/medias/svg/airbnb-white.svg" alt="Brand 1" class="img-fluid"></li>
+                        <li><img src="assets/medias/svg/paypal-white.svg" alt="Brand 1" class="img-fluid"></li>
                     </ul>
                 </div>
             </div>
-            <div>
-                <div class="d-flex flex-row align-items-center justify-content-between gap-3"><p>Manage cards</p><button><p class="txt-014">Add card</p></button></div>
-                <img src="assets/medias/cards.png" alt="Cards" class="img-fluid">
-                <div>
+            <div class="intro-card col-5 noPI">
+                <div class="d-flex flex-row align-items-center justify-content-between gap-3 mb-3">
+                    <p class="m-0">Manage cards</p>
+                    <a href="#" class="btn">Add new</a>
+                </div>
+                <img src="assets/medias/svg/card.svg" alt="Cards" class="img-fluid">
+                <div class="intro-card-element">
                     <div class="d-flex flex-row align-items-center justify-content-between gap-3" > <p>Starbucks</p> <p>$5,50 USD</p> </div>
                     <p class="txt-015"> <span>Pending</span> - San Francisco, United States </p>
                 </div>
-                <div>
+                <div class="intro-card-element">
                     <div class="d-flex flex-row align-items-center justify-content-between gap-3" > <p>Starbucks</p> <p>$5,50 USD</p> </div>
                     <p class="txt-015"> <span>Pending</span> - San Francisco, United States </p>
                 </div>
-                <p class="txt-015">View all</p>
+                <a href="#" class="txt-015 intro-card-more">View all</a>
             </div>
         </div>
 
     </div>
 
     <div class="section">
-        <div class="container d-flex flex-row align-items-center justify-content-center gap-3">
-            <div>
-                <div class="container d-flex flex-column align-items-center justify-content-between gap-3">
+        <div class="container d-flex flex-row align-items-center justify-content-between">
+            <div class="tools-example col-5 noPI">
+                <div class="container d-flex flex-column align-items-left tools-example-list">
                     <h5>Awesome projects</h5>
-                    <ul>
+                    <ul class="d-flex flex-column">
                         <li>
-                            <div>
+                            <div class="d-flex flex-row align-items-left justify-content-between">
                                 <p>Create the new logo</p>
                                 <p>6:50<span>></span></p>
                             </div>
-                            <div></div>
+                            <div class="tools-example-item-bar"></div>
                         </li>
                         <li>
-                            <div>
+                            <div class="d-flex flex-row align-items-left justify-content-between">
                                 <p>Create the new logo</p>
                                 <p>6:50<span>></span></p>
                             </div>
-                            <div></div>
+                            <div class="tools-example-item-bar"></div>
                         </li>
                         <li>
-                            <div>
+                            <div class="d-flex flex-row align-items-left justify-content-between">
                                 <p>Create the new logo</p>
                                 <p>6:50<span>></span></p>
                             </div>
-                            <div></div>
+                            <div class="tools-example-item-bar"></div>
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <button>Play video <span>▶</span></button>
-                    <img src="assets/medias/section-2.png" alt="Section 2" class="img-fluid">
+                
+                <div class="video-wrapper tools-video">
+
+                    <img 
+                    class="video-thumbnail"
+                    src="assets/medias/img/img_01.jpg"
+                    alt="Video thumbnail">
+
+                    <a class="btn" href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">
+                        <span>Play video</span>
+                        <span>▶</span>
+                    </a>
+
                 </div>
+                
             </div>
-            <div>
-                <p>Tools</p>
-                <h2>We build for designers and developers</h2>
+            <div class="d-flex flex-column align-items-left tools-text col-5 noPI">
+                <p class="txt-013 tag">Tools</p>
+                <h2>We build for designers and<br>developers</h2>
                 <h5>Get components and examples, including tons of<br>variables that will help you grow your business.</h5>
             </div>
         </div>
@@ -139,96 +156,31 @@
 
     <div class="section">
 
-        <div class="container d-flex flex-row align-items-center justify-content-center gap-3">
+        <div class="container d-flex flex-row align-items-center justify-content-between gap-3">
 
-            <div>
-                <div>
-                    <p>Tools</p>
-                    <h5>Get components and examples, including tons of<br>variables that will help you grow your business.</h5>
+            <div class="d-flex flex-column features-text col-5 noPI">
+                <div class="d-flex flex-column">
+                    <p class="txt-013 tag">Features</p>
+                    <h5>Get components and examples, including<br>tons of variables that will help you grow your<br>business.</h5>
                 </div>
-                <div>
-                    <div>
-                        <img src="assets/medias/section-3.png" alt="Section 3" class="img-fluid">
-                        <p></p>
+                <div class="features-text-check d-flex flex-column gap-3">
+                    <div class="d-flex flex-row  gap-3">
+                        <img src="assets/medias/svg/check.svg" alt="Section 3" class="img-fluid">
+                        <p>Perfect for modern startups</p>
                     </div>
-                    <div>
-                        <img src="assets/medias/section-3.png" alt="Section 3" class="img-fluid">
-                        <p></p>
+                    <div class="d-flex flex-row  gap-3">
+                        <img src="assets/medias/svg/check.svg" alt="Section 3" class="img-fluid">
+                        <p>Fully customizable and scalable</p>
                     </div>
                 </div>
             </div>
 
-            <div>
-                <button>Play video <span>▶</span></button>
-                <img src="assets/medias/section-2.png" alt="Section 2" class="img-fluid">
-            </div>
-
-        </div>
-
-    </div>
-
-    <img src="" alt="striped line">
-
-    <div class="section">
-
-        <div class="container d-flex flex-row align-items-center justify-content-center gap-3">
-
-            <div class="container d-flex flex-row align-items-center justify-content-center gap-3">
-
-                <div class="container d-flex flex-column align-items-center justify-content-center gap-3">
-
-                    <div>
-                        <img src="assets/medias/section-3.png" alt="Section 3" class="img-fluid">
-                        <div>
-                            <div>
-                                <img src="assets/medias/section-3.png" alt="Section 3" class="img-fluid">
-                                <p></p>
-                            </div>
-                            <p></p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <img src="assets/medias/section-3.png" alt="Section 3" class="img-fluid">
-                        <div>
-                            <p></p>
-                            <p></p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="container d-flex flex-column align-items-center justify-content-center gap-3">
-                    <div>
-                        <img src="assets/medias/section-3.png" alt="Section 3" class="img-fluid">
-                        <ul>
-                            <li></li>
-                        </ul>
-                        <div>
-                            <p></p>
-                            <p></p>
-                        </div>
-                    </div>
-
-                    <div>
-
-                        <img src="assets/medias/section-3.png" alt="Section 3" class="img-fluid">
-                        <p></p>
-                        <ul></ul>
-                        <div></div>
-                        <ul></ul>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div>
-                <p>Technology</p>
-                <h2>We use the latest<br>technologies on the market</h2>
-                <h5>Get components and examples, including tons of<br>variables that will help you grow your business.</h5>
-                <p>See case studies</p>
+            <div class="video-wrapper features-video col-6 noPI">
+                <a class="btn" href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">
+                    <span>Play video</span>
+                    <span>▶</span>
+                </a>
+                <img src="assets/medias/img/img_02.jpg" alt="Section 2" class="img-fluid">
             </div>
 
         </div>
@@ -241,25 +193,108 @@
 
         <div class="container d-flex flex-row align-items-center justify-content-between gap-3">
 
-            <div>
-                <div>
-                    <p>Easy to install</p>
+            <div class="d-flex flex-row align-items-center justify-content-center gap-3 col-6 technology-grid noPI">
+
+                <div class="d-flex flex-column align-items-center justify-content-center gap-3 noPI">
+
+                    <div class="technology-grid-item">
+                        <img src="assets/medias/img/person_03.jpg" alt="profilePic" class="img-fluid">
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="d-flex flex-row align-items-center gap-3">
+                                <img src="assets/medias/svg/profileIcon.svg" alt="Check" class="img-fluid">
+                                <p>Noah Smith</p>
+                            </div>
+                            <img src="assets/medias/svg/heart.svg" alt="like">
+                        </div>
+                    </div>
+
+                    <div class="technology-grid-item d-flex flex-row gap-3">
+                        <img src="assets/medias/svg/check-2.svg" alt="Check" class="img-fluid">
+                        <div class="d-flex flex-column">
+                            <p>300+ components</p>
+                            <p>Built to be customized.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-flex flex-column align-items-center justify-content-center gap-3 noPI">
+                    <div class="technology-grid-item d-flex flex-column align-items-center gap-4">
+                        <img src="assets/medias/svg/airbnb.svg" alt="AirBnb" class="img-fluid">
+                        <ul class="d-flex flex-row aling-items-center justify-content-center gap-1">
+                            <li><img src="assets/medias/svg/star-gold.svg" alt="star" class="img-fluid"></li>
+                            <li><img src="assets/medias/svg/star-gold.svg" alt="star" class="img-fluid"></li>
+                            <li><img src="assets/medias/svg/star-gold.svg" alt="star" class="img-fluid"></li>
+                            <li><img src="assets/medias/svg/star-gold.svg" alt="star" class="img-fluid"></li>
+                            <li><img src="assets/medias/svg/star-grey.svg" alt="star" class="img-fluid"></li>
+                        </ul>
+                        <div class="d-flex flex-column align-items-center">
+                            <p>4.95 out of 5 stars</p>
+                            <p>from 23 reviews</p>
+                        </div>
+                    </div>
+
+                    <div class="technology-grid-item d-flex flex-column align-items-center gap-4">
+
+                        <img src="assets/medias/img/company_01.png" alt="Web UI Kit" class="img-fluid technology-grid-item-header">
+                        <p>Website UI Kit</p>
+                        <ul class="d-flex flex-row align-items-center">
+                            <li><img src="assets/medias/img/person_01.jpg" alt="person" class="img-fluid"></li>
+                            <li><img src="assets/medias/img/person_02.jpg" alt="person" class="img-fluid"></li>
+                            <li><img src="assets/medias/img/person_03.jpg" alt="person" class="img-fluid"></li>
+                        </ul>
+                        <div></div>
+                        <ul class="d-flex flex-row align-items-center gap-3">
+                            <li><img src="assets/medias/svg/paperclip.svg" alt="paperclip" class="img-fluid"></li>
+                            <li><img src="assets/medias/svg/eye.svg" alt="eye" class="img-fluid"></li>
+                            <li><img src="assets/medias/svg/heart.svg" alt="heart" class="img-fluid"></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="d-flex flex-column col-5 technology-text noPI">
+                <p class="txt-013 tag">Technology</p>
+                <h2>We use the latest<br>technologies on the market</h2>
+                <h5>Get components and examples, including tons of<br>variables that will help you grow your business.</h5>
+                <a href="">See case studies</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <img src="" alt="striped line">
+
+    <div class="section">
+
+        <div class="container d-flex flex-row align-items-center justify-content-between gap-3">
+
+            <div class="d-flex flex-column col-5 easy-text">
+                <div class="d-flex flex-column">
+                    <p class="txt-013 tag">Easy to install</p>
                     <h2>Download, install and run.</h2>
                     <h5>Get components and examples, including tons of<br>variables that will help you grow your business.</h5>
                 </div>
-                <div class="container d-flex flex-row align-items-center justify-content-center gap-3">
+                <div class="container d-flex flex-row align-items-center justify-content-left gap-4 easy-dl noPI">
                     <div>
-                        <img src="assets/medias/section-3.png" alt="Section 3" class="img-fluid">
+                        <img src="assets/medias/svg/AppleDL.svg" alt="Download in Apple Store" class="img-fluid">
                     </div>
                     <div>
-                        <img src="assets/medias/section-3.png" alt="Section 3" class="img-fluid">
+                        <img src="assets/medias/svg/GooglePlayDL.svg" alt="Download on Google Play" class="img-fluid">
                     </div>
                 </div>
             </div>
 
-            <div>
-                <button>Play video <span>▶</span></button>
-                <img src="assets/medias/section-2.png" alt="Section 2" class="img-fluid">
+            <div class="video-wrapper easy-video col-6 noPI">
+                <a class="btn" href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">
+                    <span>Play video</span>
+                    <span>▶</span>
+                </a>
+                <img src="assets/medias/img/img_03.jpg" alt="Section 2" class="img-fluid">
             </div>
 
         </div>

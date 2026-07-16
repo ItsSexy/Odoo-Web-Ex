@@ -44,10 +44,8 @@
 
     :root {
     /*h2*/
-    --font-size-h2: var(--txt-4);
 
     /*h1*/
-    --font-size-h1: var(--txt-5);
     }
 
 }
@@ -57,13 +55,10 @@
 
     :root {
     /*h3*/
-    --font-size-h3: var(--txt-4);
 
     /*h2*/
-    --font-size-h2: var(--txt-5);
 
     /*h1*/
-    --font-size-h1: var(--txt-6);
     }
 
 }
@@ -73,22 +68,16 @@
 
     :root {
     /*p*/
-    --font-size-p: var(--txt-2);
 
     /*h5*/
-    --font-size-h5: var(--txt-2);
 
     /*h4*/
-    --font-size-h4: var(--txt-4);
 
     /*h3*/
-    --font-size-h3: var(--txt-5);
 
     /*h2*/
-    --font-size-h2: var(--txt-6);
 
     /*h1*/
-    --font-size-h1: var(--txt-7);
     }
 
 }
@@ -161,6 +150,23 @@ h1 {
     color: var(--font-color-h1);
 }
 
+.txt-015{
+    font-size: var(--txt-015);
+}
 
-/* SECTION MODIFIERS */
+.txt-014{
+    font-size: var(--txt-014);
+}
 
+.txt-013{
+    font-size: var(--txt-013);
+}
+
+.tag{
+    width: fit-content;
+    padding: 5px 15px;
+
+    color: var(--c-w);
+
+    border-radius: 32px;
+}

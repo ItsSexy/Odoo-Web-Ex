@@ -1,4 +1,11 @@
 .section{
     align-items: center;
     justify-content: center;
+
+    padding-block: 80px;
+}
+
+.section--bleu{
+    background-color: var(--c-b);
+    color: var(--c-w);
 }

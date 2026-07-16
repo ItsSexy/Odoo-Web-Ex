@@ -1,5 +1,7 @@
-@use "./base/base-spacing.scss" as *;
+@use "../../node_modules/bootstrap/scss/bootstrap";
+
 @use "./base/base-html.scss" as *;
+@use "./base/base-spacing.scss" as *;
 @use "./base/base-fonts.scss" as *;
 @use "./base/base-sections.scss" as *;
 
@@ -10,5 +12,3 @@
 @use "./partials/partials-footer.scss" as *;
 
 @use "./pages/pages-index.scss" as *;
-
-@import "../../node_modules/bootstrap/scss/bootstrap";
