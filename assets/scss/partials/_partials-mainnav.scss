@@ -2,6 +2,13 @@ nav{
     background-color: var(--c-b);
 }
 
+#navbar{
+    margin-top: 16px;
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid var(--c-r-10);
+}
+
 .navbar-nav .nav-link{
     color: var(--c-w);
 }
@@ -25,5 +32,18 @@ nav{
         &:hover{
         filter: brightness(0.9);
         }
+    }
+}
+
+.navbar-toggler{
+    border: none !important;
+    .navbar-toggler-icon{
+        background-image: url("/assets/medias/svg/burger.svg");
+    }
+}
+
+@media all and (min-width: 992px){
+    #navbar{
+        border-bottom: none;
     }
 }

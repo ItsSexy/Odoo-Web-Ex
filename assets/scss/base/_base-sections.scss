@@ -1,11 +1,51 @@
 .section{
+    position: relative;
     align-items: center;
     justify-content: center;
 
     padding-block: 80px;
 }
 
-.section--bleu{
+.section-triangleAfter::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+
+    width: 0;
+    height: 0;
+
+    border-right: 100vw solid transparent;
+    border-top: 20px solid var(--c-b);
+}
+
+.section-triangleBefore::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -20px;
+
+    width: 0;
+    height: 0;
+
+    border-left: 100vw solid transparent;
+    border-bottom: 20px solid var(--c-bl);
+}
+
+.section-dark{
+    background-color: var(--c-bl);
+    color: var(--c-w);
+}
+
+.section-blue{
     background-color: var(--c-b);
     color: var(--c-w);
+}
+
+.section-grey{
+    background-color: var(--c-r-10);
+}
+
+.section-mt{
+    margin-top: 120px !important;
 }

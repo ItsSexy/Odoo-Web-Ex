@@ -17,6 +17,10 @@ INTRO
         }
     }
 
+    ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     li img{
         width: 90px;
         height: 30px;
@@ -27,10 +31,14 @@ INTRO
 
     padding: 32px !important;
 
+    margin-top: 50px !important;
+
     background-color: var(--c-w);
     color: var(--c-bl);
 
     border-radius: 16px;
+
+    grid-template-columns: repeat(2, 1fr);
 
     .btn{
 
@@ -67,10 +75,19 @@ INTRO
     }
 }
 
+@media all and (min-width: 992px){
+    .intro-card{
+        margin: 0 !important;
+    }
+}
 
 /*=====================
 TOOLS
 =====================*/
+
+.tools-example:has(.container):has(.section){
+    margin-top: 160px !important;
+}
 
 .tools-example {
 
@@ -108,7 +125,7 @@ TOOLS
         }
         &:hover{
             z-index: 1;
-            transform: scale(1.015);
+            transform: scale(1.01);
             filter:grayscale(0);
             + .video-wrapper{
                 filter:grayscale(1);
@@ -118,10 +135,10 @@ TOOLS
 }
 
 .tools-video{
+    position: relative;
     z-index: 0;
-    position: absolute;
-    top: -107px;
-    right: -107px;
+    width: fit-content !important;
+    align-self: center;
 
     img{
         width: 390px;
@@ -133,7 +150,7 @@ TOOLS
     }
 
     &:hover{
-        transform: scale(1.05);
+        transform: scale(1.01);
     }
 
 }
@@ -165,6 +182,72 @@ TOOLS
         background-color: var(--c-y);
     }
 }
+
+@media all and (min-width: 992px){
+    .tools-video{
+        position: absolute !important;
+        top: -107px;
+        right: -107px;
+    }
+}
+
+/*=====================
+DOTTED LINE
+=====================*/
+
+.dottedLine{
+    height: 50px;
+    align-content: center;
+    img{
+        justify-self: center;
+        transform: scaleX(1);
+        padding-left: none;
+    }
+} 
+
+.dL-1{
+    img{
+        transform: scaleX(1);
+        padding-left: none;
+    }
+}
+
+.dL-2{
+    img{
+        transform: scaleX(1);
+        padding-left: none;
+    }
+}
+
+.dL-3{
+    img{
+        padding-left: none;
+    }
+}
+
+@media all and (min-width: 992px){
+    .dL-1{
+        img{
+            transform: scaleX(-1);
+            padding-left: 15%;
+        }
+    }
+
+    .dL-2{
+        img{
+            transform: scaleX(1);
+            padding-left: 15%;
+        }
+    }
+    
+    .dL-3{
+        img{
+            transform: scaleX(-1);
+            padding-left: 15%;
+        }
+    }
+}
+
 
 /*=====================
 FEATURES
@@ -312,5 +395,163 @@ EASY TO INSTALL
     img{
         cursor: pointer;
         filter: grayscale(1);
+    }
+}
+
+/*=====================
+INFINITE SOLUTIONS
+=====================*/
+
+.infinite-text{
+    padding: 85px !important;
+
+    background-color: var(--c-bl);
+    color: var(--c-w);
+
+    border-radius: 0px 64px 0px 64px;
+
+    .btn{
+        padding: 10px 20px;
+        width: fit-content;
+    }
+}
+
+/*=====================
+AWARDS
+=====================*/
+
+.section:has(.awards-list){
+    overflow: hidden;
+}
+
+.awards-list{
+    .tag{
+        background-color: var(--c-b);
+        margin-bottom: 30px !important;
+    }
+    > ul{
+        margin-top: 50px !important;
+    }
+}
+
+.awards-list-item{
+    padding: 50px;
+
+    background-color: var(--c-w);
+
+    border: 1px solid var(--c-r-10);
+    border-radius: 16px;
+
+    text-wrap: nowrap;
+    text-align: center;
+
+    transition: all 0.15s ease-in-out;
+
+    cursor: pointer;
+
+    &:hover{
+        transform: scale(1.025);
+    }
+}
+
+.awards-img-header{
+    max-width: 100px !important;
+}
+
+@media all and (min-width: 768px){
+    .awards-list{
+        > ul{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media all and (min-width: 1200px){
+    .awards-list{
+        > ul{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+/*=====================
+HELPFUL ANSWERS
+=====================*/
+
+.accordion-toggle{
+    position: absolute;
+    padding-right: 20px;
+    right: 0;
+}
+
+.accordion-button::after{
+    content: "" !important;
+    background-image: none !important;
+}
+
+.help-text{
+    
+    > h2:first-of-type{
+        margin-bottom: 16px !important;
+    }
+
+    > h5:first-of-type{
+        margin-top: 110px !important;
+        margin-bottom: 30px !important;
+    }
+}
+
+.help-list{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+
+    width: 100%;
+
+    margin-top: 50px !important;
+    
+    cursor: pointer;
+    
+    .accordion-item{
+        
+        border: 1px solid var(--c-r-10) !important;
+        border-radius: 16px !important;
+
+        overflow: auto;
+        
+        text-wrap: nowrap;
+        
+        color: var(--t-c);
+        
+        img{
+            max-height: 15px;
+        }
+        
+        .accordion-button:not(.collapsed){
+            
+            background-color: var(--c-w) !important;
+            filter: brightness(0.9);
+        }
+    }
+}
+
+.help-buttons{
+    .btn{
+        padding: 10px 20px;
+    }
+    >:first-child{
+        background-color: var(--c-b);
+        border: none;
+        color: var(--c-w);
+        &:hover{
+            background-color: var(--c-bl);
+            color: var(--c-w);
+        }
+    }
+}
+
+@media all and (min-width: 992px){
+    .help-list{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
