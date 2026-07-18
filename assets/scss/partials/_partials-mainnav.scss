@@ -2,11 +2,16 @@ nav{
     background-color: var(--c-b);
 }
 
+.navbar{
+    .container{
+        border-bottom: 1px solid var(--c-r-10);
+        padding-bottom: 16px;
+    }
+}
+
 #navbar{
     margin-top: 16px;
     padding-bottom: 25px;
-
-    border-bottom: 1px solid var(--c-r-10);
 }
 
 .navbar-nav .nav-link{
@@ -44,6 +49,6 @@ nav{
 
 @media all and (min-width: 992px){
     #navbar{
-        border-bottom: none;
+        padding-bottom: 0px !important;
     }
 }

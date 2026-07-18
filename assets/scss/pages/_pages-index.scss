@@ -68,9 +68,9 @@ INTRO
 
     .intro-card-more{
         color: var(--c-b);
-        text-decoration: underline;
-        text-decoration-style: dotted;
-        text-decoration-thickness: 3px;
+        text-decoration: underline !important;
+        text-decoration-style: dotted !important;
+        text-decoration-thickness: 3px !important;
         text-underline-offset: 6px;
     }
 }
@@ -439,6 +439,8 @@ AWARDS
 .awards-list-item{
     padding: 50px;
 
+    height: 100%;
+
     background-color: var(--c-w);
 
     border: 1px solid var(--c-r-10);
@@ -458,6 +460,13 @@ AWARDS
 
 .awards-img-header{
     max-width: 100px !important;
+}
+
+.awards-card-1{
+    ul li img{
+        width: 18px;
+        height: auto;
+    }
 }
 
 @media all and (min-width: 768px){
@@ -486,9 +495,16 @@ HELPFUL ANSWERS
     right: 0;
 }
 
-.accordion-button::after{
-    content: "" !important;
-    background-image: none !important;
+.accordion-button{
+
+    div p{
+        text-wrap: wrap;
+    }
+
+    &::after{
+        content: "" !important;
+        background-image: none !important;
+    }
 }
 
 .help-text{
@@ -501,6 +517,10 @@ HELPFUL ANSWERS
         margin-top: 110px !important;
         margin-bottom: 30px !important;
     }
+
+    > div{
+        margin-top: 20px;
+    }
 }
 
 .help-list{
@@ -508,13 +528,17 @@ HELPFUL ANSWERS
     grid-template-columns: repeat(1, 1fr);
     gap: 16px;
 
+    align-content: start;
+
     width: 100%;
 
-    margin-top: 50px !important;
+    margin-top: 16px !important;
     
     cursor: pointer;
     
     .accordion-item{
+
+        height: fit-content;
         
         border: 1px solid var(--c-r-10) !important;
         border-radius: 16px !important;
@@ -553,7 +577,7 @@ HELPFUL ANSWERS
 }
 
 @media all and (min-width: 992px){
-    .help-list{
-        grid-template-columns: repeat(2, 1fr);
+    .help-text > div{
+        gap: 16px;
     }
 }
