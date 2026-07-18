@@ -140,11 +140,6 @@ TOOLS
     width: fit-content !important;
     align-self: center;
 
-    img{
-        width: 390px;
-        height: 310px;
-    }
-
     a{
         right: 25px;
     }
@@ -188,6 +183,11 @@ TOOLS
         position: absolute !important;
         top: -107px;
         right: -107px;
+
+        img{
+            width: 390px;
+            height: 310px;
+        }
     }
 }
 
@@ -507,6 +507,10 @@ HELPFUL ANSWERS
     }
 }
 
+.accordion-body{
+    text-wrap: wrap;
+}
+
 .help-text{
     
     > h2:first-of-type{
@@ -518,7 +522,7 @@ HELPFUL ANSWERS
         margin-bottom: 30px !important;
     }
 
-    > div{
+    > div:first-of-type{
         margin-top: 20px;
     }
 }
